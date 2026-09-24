@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bve62kafgwhbh"]
+
+[ext_resource type="Texture2D" uid="uid://bk8m60dxwnugg" path="res://assets/Untitled drawing.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://chylwify83c5t" path="res://scenes/player.gd" id="1_g2els"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_g2els")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0161458, 0.0164062)
+texture = ExtResource("1_3vyb7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+position_smoothing_enabled = true
