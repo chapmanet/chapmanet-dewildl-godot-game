@@ -1,13 +1,14 @@
-extends Area2D
+extends StaticBody2D
 
-var touching = 0
+@onready var interactable: Area2D = $Interactable
+@onready var sprite_2d: Sprite2D = $Sprite2D
 
-func _on_body_entered(body: Node2D, touching):
-	touching = 1
-	if Input.is_action_pressed("interact"):
-		queue_free()
-		print("Coin collected")
+func _ready() -> void:
+	interactable.interact = _on_interact
 
-func _on_body_exited(body: Node2D, touching):
-	touching = 0
-	return touching
+
+func _on_interact():
+	if sprite_2d.frame == 0:
+		sprite_2d.frame = 1
+		interactable.is_interactable = false
+		print("the player gained 1 coin")
