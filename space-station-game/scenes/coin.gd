@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends Node2D
 
 @onready var interactable: Area2D = $Interactable
 @onready var sprite_2d: Sprite2D = $Sprite2D
@@ -9,6 +9,6 @@ func _ready() -> void:
 
 func _on_interact():
 	if sprite_2d.frame == 0:
-		sprite_2d.frame = 1
 		interactable.is_interactable = false
+		queue_free()
 		print("the player gained 1 coin")

@@ -12,21 +12,3 @@ script = ExtResource("1_ofc3v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractRange"]
 shape = SubResource("CircleShape2D_omdnv")
-
-[node name="InteractLabel" type="Label" parent="."]
-z_index = 10
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -47.0
-offset_top = -40.0
-offset_right = 47.0
-offset_bottom = -17.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "E to interact"
-
-[connection signal="area_entered" from="InteractRange" to="InteractLabel" method="_on_interact_range_area_entered"]
-[connection signal="area_exited" from="InteractRange" to="InteractLabel" method="_on_interact_range_area_exited"]
