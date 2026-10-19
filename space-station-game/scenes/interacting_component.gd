@@ -13,6 +13,10 @@ func _input(event: InputEvent) -> void:
 			
 			can_interact = true
 
+func _process(_delta: float) -> void:
+	if current_interactions and can_interact:
+		current_interactions.sort_custom(_sort_by_nearest)
+
 
 func _sort_by_nearest(area1, area2):
 	var area1_dist = global_position.distance_to(area1.global_position)

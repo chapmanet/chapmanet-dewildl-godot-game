@@ -8,7 +8,7 @@ func _ready() -> void:
 
 
 func _on_interact():
-	if sprite_2d.frame == 0:
-		interactable.is_interactable = false
-		queue_free()
-		print("the player gained 1 coin")
+	print("interact 2")
+	interactable.is_interactable = false
+	queue_free()
+	print("the player gained 1 coin")
