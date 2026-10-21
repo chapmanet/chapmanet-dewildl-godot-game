@@ -8,7 +8,6 @@ func _ready() -> void:
 
 
 func _on_interact():
-	print("interact 2")
 	interactable.is_interactable = false
 	queue_free()
 	print("the player gained 1 coin")

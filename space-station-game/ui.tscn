@@ -1,8 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbqtvdppvkril"]
+[gd_scene load_steps=3 format=3 uid="uid://bbqtvdppvkril"]
 
 [ext_resource type="Script" uid="uid://bauf2grpt1tv1" path="res://pause_menu.gd" id="1_fyqef"]
+[ext_resource type="Script" uid="uid://dqos4l06i1hsv" path="res://ui.gd" id="1_m6e0p"]
 
 [node name="UI" type="CanvasLayer"]
+script = ExtResource("1_m6e0p")
+
+[node name="CoinsCount" type="Label" parent="."]
+offset_left = 1058.0
+offset_top = 5.0
+offset_right = 1146.0
+offset_bottom = 28.0
+text = "Coins:      /3"
+
+[node name="CoinNumber" type="Label" parent="CoinsCount"]
+offset_left = 62.0
+offset_right = 74.0
+offset_bottom = 23.0
+text = "0"
+metadata/_edit_use_anchors_ = true
 
 [node name="PauseMenu" type="ColorRect" parent="."]
 process_mode = 3

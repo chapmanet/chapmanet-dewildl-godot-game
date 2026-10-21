@@ -5,10 +5,8 @@ var can_interact := true
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact") and can_interact:
-		print("interact")
 		if current_interactions:
 			can_interact = false
-			print("interact 1.5")
 			
 			await current_interactions[0].interact.call()
 			
