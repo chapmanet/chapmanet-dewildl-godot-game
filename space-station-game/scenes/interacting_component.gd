@@ -8,6 +8,7 @@ func _input(event: InputEvent) -> void:
 		print("interact")
 		if current_interactions:
 			can_interact = false
+			print("interact 1.5")
 			
 			await current_interactions[0].interact.call()
 			
@@ -25,6 +26,7 @@ func _sort_by_nearest(area1, area2):
 
 
 func _on_interact_range_area_entered(area: Area2D) -> void:
+	print("area entered")
 	current_interactions.push_back(area)
 
 

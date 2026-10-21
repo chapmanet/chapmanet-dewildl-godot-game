@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://otytu8y45h75"]
 
-[ext_resource type="Texture2D" uid="uid://evt4o4pqtlej" path="res://assets/Untitled drawing (1).png" id="1_d5gmh"]
 [ext_resource type="Script" uid="uid://c3blxofyg44l1" path="res://scenes/coin.gd" id="1_i64fm"]
+[ext_resource type="Texture2D" uid="uid://pahregv81kyd" path="res://assets/test_coin.png" id="2_11l1o"]
 [ext_resource type="PackedScene" uid="uid://b30f8w17mcta2" path="res://scenes/interactable.tscn" id="2_i64fm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0t63x"]
@@ -12,7 +12,7 @@ script = ExtResource("1_i64fm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.0208659, 0.0208659)
-texture = ExtResource("1_d5gmh")
+texture = ExtResource("2_11l1o")
 
 [node name="Interactable" parent="." instance=ExtResource("2_i64fm")]
 interact_name = "Collect Coin"
