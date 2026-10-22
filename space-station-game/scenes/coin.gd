@@ -10,4 +10,4 @@ func _ready() -> void:
 func _on_interact():
 	interactable.is_interactable = false
 	queue_free()
-	print("the player gained 1 coin")
+	EventBus.coin_collected.emit()

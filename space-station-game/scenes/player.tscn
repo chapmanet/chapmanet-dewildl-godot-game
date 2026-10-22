@@ -16,6 +16,21 @@ position = Vector2(1.63913e-07, 1.49012e-07)
 scale = Vector2(0.0166667, 0.0166667)
 texture = ExtResource("2_qhqgy")
 
+[node name="Label" type="Label" parent="Sprite2D"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -479.999
+offset_top = -240.0
+offset_right = -479.999
+offset_bottom = -720.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 300
+text = "Player"
+horizontal_alignment = 1
+max_lines_visible = 1
+visible_characters = 6
+
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true

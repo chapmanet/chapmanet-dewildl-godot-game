@@ -4,7 +4,7 @@ extends CanvasLayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	EventBus.score_updated.connect(update_score)
 
 func update_score(score):
 	coin_number.text = str(score)

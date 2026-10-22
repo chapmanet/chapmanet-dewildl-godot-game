@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://h17l0js6d8pc"]
 
-[ext_resource type="Script" uid="uid://uvrj7aac83xk" path="res://scenes/node.gd" id="1_lbhrr"]
+[ext_resource type="Script" uid="uid://ceorp615q6ci3" path="res://scenes/game_manager.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://bve62kafgwhbh" path="res://scenes/player.tscn" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://d3jegyuqbedbb" path="res://scenes/test_level.tscn" id="3_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://bbqtvdppvkril" path="res://ui.tscn" id="3_lnu2h"]
 
 [node name="Game" type="Node2D"]
 
-[node name="Node" type="Node" parent="."]
+[node name="GameManager" type="Node" parent="."]
 script = ExtResource("1_lbhrr")
 
 [node name="TestLevel" parent="." instance=ExtResource("3_lbhrr")]
