@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpgm1d5m0ei7l"]
+
+[ext_resource type="Script" uid="uid://c3blxofyg44l1" path="res://scenes/coin.gd" id="1_q5rd3"]
+[ext_resource type="Texture2D" uid="uid://8fm0unghk8a" path="res://assets/test_level_changer.png" id="2_q5rd3"]
+[ext_resource type="PackedScene" uid="uid://b30f8w17mcta2" path="res://scenes/interactable.tscn" id="3_ihydf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0t63x"]
+radius = 10.0499
+
+[node name="LevelSwitcher" type="Node2D"]
+script = ExtResource("1_q5rd3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0208659, 0.0208659)
+texture = ExtResource("2_q5rd3")
+
+[node name="Interactable" parent="." instance=ExtResource("3_ihydf")]
+interact_name = "Collect Coin"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+shape = SubResource("CircleShape2D_0t63x")

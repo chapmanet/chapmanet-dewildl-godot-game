@@ -9,5 +9,4 @@ func _ready() -> void:
 
 func _on_interact():
 	interactable.is_interactable = false
-	queue_free()
-	EventBus.coin_collected.emit()
+	# Switch levels
