@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bpgm1d5m0ei7l"]
 
-[ext_resource type="Script" uid="uid://c3blxofyg44l1" path="res://scenes/coin.gd" id="1_q5rd3"]
-[ext_resource type="Texture2D" uid="uid://8fm0unghk8a" path="res://assets/test_level_changer.png" id="2_q5rd3"]
-[ext_resource type="PackedScene" uid="uid://b30f8w17mcta2" path="res://scenes/interactable.tscn" id="3_ihydf"]
+[ext_resource type="Script" uid="uid://c3blxofyg44l1" path="res://scenes/Objects/coin.gd" id="1_q5rd3"]
+[ext_resource type="Texture2D" uid="uid://8fm0unghk8a" path="res://assets/TestAssets/test_level_changer.png" id="2_q5rd3"]
+[ext_resource type="PackedScene" uid="uid://b30f8w17mcta2" path="res://scenes/Background/interactable.tscn" id="3_ihydf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0t63x"]
 radius = 10.0499

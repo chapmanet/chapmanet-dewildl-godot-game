@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://h17l0js6d8pc"]
+
+[ext_resource type="Script" uid="uid://ceorp615q6ci3" path="res://scenes/Background/game_manager.gd" id="1_5ubxa"]
+[ext_resource type="PackedScene" uid="uid://d3jegyuqbedbb" path="res://scenes/Game&Levels/test_level.tscn" id="2_uda3f"]
+[ext_resource type="PackedScene" uid="uid://bve62kafgwhbh" path="res://scenes/Player&UI/player.tscn" id="3_jycte"]
+[ext_resource type="PackedScene" uid="uid://bbqtvdppvkril" path="res://scenes/Player&UI/ui.tscn" id="4_ev4ff"]
+
+[node name="Game" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_5ubxa")
+
+[node name="TestLevel" parent="." instance=ExtResource("2_uda3f")]
+
+[node name="Player" parent="." instance=ExtResource("3_jycte")]
+
+[node name="UI" parent="." instance=ExtResource("4_ev4ff")]

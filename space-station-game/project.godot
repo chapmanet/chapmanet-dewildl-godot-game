@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="space station game"
-run/main_scene="uid://h17l0js6d8pc"
+run/main_scene="uid://cmi0taegmm4mq"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-EventBus="*res://scenes/event_bus.gd"
-SceneSwitcher="*res://scenes/scene_switcher.gd"
+EventBus="*res://scenes/Background/event_bus.gd"
+SceneSwitcher="*res://scenes/Background/scene_switcher.gd"
 
 [input]
 
