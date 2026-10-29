@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=4 uid="uid://cmi0taegmm4mq"]
+[gd_scene load_steps=6 format=4 uid="uid://cmi0taegmm4mq"]
 
 [ext_resource type="Texture2D" uid="uid://by2ko87wvfppt" path="res://assets/TestAssets/test_tileset.png" id="1_h42jw"]
 [ext_resource type="PackedScene" uid="uid://bpgm1d5m0ei7l" path="res://scenes/Objects/level_switcher.tscn" id="2_fhaxt"]
 [ext_resource type="Script" uid="uid://c8rkhexuvgr5f" path="res://scenes/Objects/level_switcher.gd" id="3_vqabp"]
-[ext_resource type="PackedScene" uid="uid://bve62kafgwhbh" path="res://scenes/Player&UI/player.tscn" id="4_00x3c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s2a6q"]
 texture = ExtResource("1_h42jw")
@@ -154,5 +153,3 @@ tile_set = SubResource("TileSet_hmrha")
 [node name="LevelSwitcher" parent="." instance=ExtResource("2_fhaxt")]
 position = Vector2(0, 276)
 script = ExtResource("3_vqabp")
-
-[node name="Player" parent="." instance=ExtResource("4_00x3c")]

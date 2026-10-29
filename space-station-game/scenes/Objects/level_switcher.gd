@@ -8,5 +8,6 @@ func _ready() -> void:
 
 
 func _on_interact():
+	print("interact")
 	interactable.is_interactable = false
-	SceneSwitcher.switch_scene("res://scenes/Game&Levels/game.tscn")
+	EventBus.level_switched.emit()

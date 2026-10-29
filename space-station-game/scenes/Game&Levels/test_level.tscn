@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://d3jegyuqbedbb"]
+[gd_scene load_steps=6 format=4 uid="uid://d3jegyuqbedbb"]
 
 [ext_resource type="Texture2D" uid="uid://by2ko87wvfppt" path="res://assets/TestAssets/test_tileset.png" id="1_paw1w"]
 [ext_resource type="PackedScene" uid="uid://otytu8y45h75" path="res://scenes/Objects/coin.tscn" id="2_j6w7d"]
+[ext_resource type="PackedScene" uid="uid://cmi0taegmm4mq" path="res://scenes/Game&Levels/space_station_1.tscn" id="3_kr3ht"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j6w7d"]
 texture = ExtResource("1_paw1w")
@@ -152,3 +153,6 @@ position = Vector2(322, -36)
 
 [node name="Coin3" parent="." instance=ExtResource("2_j6w7d")]
 position = Vector2(299, -434)
+
+[node name="SpaceStation" parent="." instance=ExtResource("3_kr3ht")]
+position = Vector2(208, -1408)

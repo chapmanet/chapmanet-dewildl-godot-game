@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6qxpwu3hdh1s"]
+
+[ext_resource type="Script" uid="uid://dqos4l06i1hsv" path="res://scenes/Player&UI/game_ui.gd" id="1_ktpgj"]
+
+[node name="GameUI" type="CanvasLayer"]
+script = ExtResource("1_ktpgj")
+
+[node name="CoinsCount" type="Label" parent="."]
+offset_left = 1058.0
+offset_top = 5.0
+offset_right = 1146.0
+offset_bottom = 28.0
+text = "Coins:      /3"
+
+[node name="CoinNumber" type="Label" parent="CoinsCount"]
+layout_mode = 0
+offset_left = 62.0
+offset_right = 74.0
+offset_bottom = 23.0
+text = "0"
+metadata/_edit_use_anchors_ = true
