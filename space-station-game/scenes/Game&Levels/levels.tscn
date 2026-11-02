@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://d3jegyuqbedbb"]
+
+[ext_resource type="PackedScene" uid="uid://de0ck5rsgm0eg" path="res://scenes/Game&Levels/tutorial.tscn" id="1_rgjd2"]
+[ext_resource type="PackedScene" uid="uid://bc7bcxv2m70x8" path="res://scenes/Game&Levels/level_1.tscn" id="2_h1rta"]
+[ext_resource type="PackedScene" uid="uid://cmi0taegmm4mq" path="res://scenes/Game&Levels/space_station_1.tscn" id="3_kr3ht"]
+[ext_resource type="PackedScene" uid="uid://bbhyu661iy4da" path="res://scenes/Game&Levels/level_2.tscn" id="4_rgjd2"]
+[ext_resource type="PackedScene" uid="uid://b6nom5po8a6nw" path="res://scenes/Game&Levels/level_3.tscn" id="5_655v7"]
+
+[node name="Levels" type="Node"]
+
+[node name="SpaceStation" parent="." instance=ExtResource("3_kr3ht")]
+position = Vector2(208, -1408)
+
+[node name="Tutorial" parent="." instance=ExtResource("1_rgjd2")]
+
+[node name="Level1" parent="." instance=ExtResource("2_h1rta")]
+position = Vector2(208, 1680)
+
+[node name="Level2" parent="." instance=ExtResource("4_rgjd2")]
+position = Vector2(1696, -32)
+
+[node name="Level3" parent="." instance=ExtResource("5_655v7")]
+position = Vector2(2176, 1648)
