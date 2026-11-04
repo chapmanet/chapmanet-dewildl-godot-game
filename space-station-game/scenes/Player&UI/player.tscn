@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://bve62kafgwhbh"]
 
 [ext_resource type="Script" uid="uid://chylwify83c5t" path="res://scenes/Player&UI/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://dtkwpxmmb5ip2" path="res://assets/TestAssets/test_player.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://0vvarta8mihe" path="res://assets/TestAssets/test_player.png" id="2_qhqgy"]
 [ext_resource type="PackedScene" uid="uid://dngxxadjsv85x" path="res://scenes/Background/interacting_component.tscn" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(16, 16)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 safe_margin = 0.001
 script = ExtResource("1_g2els")
 

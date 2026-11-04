@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://h17l0js6d8pc"]
+[gd_scene load_steps=7 format=3 uid="uid://h17l0js6d8pc"]
 
 [ext_resource type="Script" uid="uid://ceorp615q6ci3" path="res://scenes/Background/game_manager.gd" id="1_5ubxa"]
 [ext_resource type="PackedScene" uid="uid://d3jegyuqbedbb" path="res://scenes/Game&Levels/levels.tscn" id="2_uda3f"]
+[ext_resource type="PackedScene" uid="uid://bpgm1d5m0ei7l" path="res://scenes/Objects/level_switcher.tscn" id="3_5ruug"]
 [ext_resource type="PackedScene" uid="uid://bve62kafgwhbh" path="res://scenes/Player&UI/player.tscn" id="3_jycte"]
 [ext_resource type="PackedScene" uid="uid://bbqtvdppvkril" path="res://scenes/Player&UI/ui.tscn" id="4_ev4ff"]
+[ext_resource type="PackedScene" uid="uid://b6qxpwu3hdh1s" path="res://scenes/Player&UI/game_ui.tscn" id="6_xkii7"]
 
 [node name="Game" type="Node2D"]
 
@@ -12,8 +14,21 @@ script = ExtResource("1_5ubxa")
 
 [node name="Levels" parent="." instance=ExtResource("2_uda3f")]
 
+[node name="LevelSwitcher" parent="Levels" instance=ExtResource("3_5ruug")]
+position = Vector2(208, -1133)
+
+[node name="DestinationPoint1" type="Marker2D" parent="Levels"]
+
+[node name="DestinationPoint2" type="Marker2D" parent="Levels"]
+position = Vector2(-184, -1410)
+
+[node name="DestinationPoint3" type="Marker2D" parent="Levels"]
+position = Vector2(130, 1109)
+
 [node name="Player" parent="." instance=ExtResource("3_jycte")]
 z_index = 1
-position = Vector2(273, -1191)
+position = Vector2(-184, -1410)
 
 [node name="UI" parent="." instance=ExtResource("4_ev4ff")]
+
+[node name="GameUI" parent="." instance=ExtResource("6_xkii7")]
