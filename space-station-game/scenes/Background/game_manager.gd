@@ -5,15 +5,20 @@ var level = 0
 
 
 func change_level():
+	score = 0
 	level += 1
 	EventBus.level_updated.emit(level)
+	EventBus.score_updated.emit(score)
 	print(level)
 	if level == 1:
-		pass
+		$"../Player".set_position($"../Levels/DestinationPoint1".global_position)
+		$"../GameUI".show()
 	if level == 2:
-		pass
+		$"../Player".set_position($"../Levels/DestinationPoint2".global_position)
+		$"../GameUI".hide()
 	if level == 3:
-		pass
+		$"../Player".set_position($"../Levels/DestinationPoint3".global_position)
+		$"../GameUI".show()
 	if level == 4:
 		pass
 	if level == 5:
@@ -43,4 +48,5 @@ func increase_score():
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	EventBus.coin_collected.connect(increase_score)
-	EventBus.level_updated.connect(change_level)
+	EventBus.level_switched.connect(change_level)
+	$"../GameUI".hide()

@@ -8,3 +8,4 @@ func _ready() -> void:
 
 func update_score(score):
 	coin_number.text = str(score)
+	
