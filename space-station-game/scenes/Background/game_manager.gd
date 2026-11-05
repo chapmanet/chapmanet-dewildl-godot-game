@@ -3,7 +3,6 @@ extends Node
 var score = 0
 var level = 0
 
-
 func change_level():
 	score = 0
 	level += 1
@@ -37,7 +36,6 @@ func change_level():
 		$"../Player".set_position($"../Levels/DestinationPoint9".global_position)
 	if level == 10:
 		pass
-	
 
 
 func increase_score():
