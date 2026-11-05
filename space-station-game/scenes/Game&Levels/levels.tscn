@@ -8,8 +8,25 @@
 
 [node name="Levels" type="Node"]
 
-[node name="SpaceStation" parent="." instance=ExtResource("3_kr3ht")]
+[node name="Space Stations" type="Node" parent="."]
+
+[node name="SpaceStation" parent="Space Stations" instance=ExtResource("3_kr3ht")]
 position = Vector2(208, -1408)
+
+[node name="SpaceStation2" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(208, -2144)
+
+[node name="SpaceStation3" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(1728, -1408)
+
+[node name="SpaceStation4" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(1728, -2144)
+
+[node name="SpaceStation5" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(208, -2880)
+
+[node name="SpaceStation6" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(1728, -2880)
 
 [node name="Tutorial" parent="." instance=ExtResource("1_rgjd2")]
 
