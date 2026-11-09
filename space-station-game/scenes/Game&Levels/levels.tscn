@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://de0ck5rsgm0eg" path="res://scenes/Game&Levels/tutorial.tscn" id="1_rgjd2"]
 [ext_resource type="PackedScene" uid="uid://bc7bcxv2m70x8" path="res://scenes/Game&Levels/level_1.tscn" id="2_h1rta"]
-[ext_resource type="PackedScene" uid="uid://cmi0taegmm4mq" path="res://scenes/Game&Levels/space_station_1.tscn" id="3_kr3ht"]
+[ext_resource type="PackedScene" uid="uid://cmi0taegmm4mq" path="res://scenes/Game&Levels/space_station.tscn" id="3_kr3ht"]
 [ext_resource type="PackedScene" uid="uid://bbhyu661iy4da" path="res://scenes/Game&Levels/level_2.tscn" id="4_rgjd2"]
 [ext_resource type="PackedScene" uid="uid://b6nom5po8a6nw" path="res://scenes/Game&Levels/level_3.tscn" id="5_655v7"]
 
