@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://d3jegyuqbedbb"]
+[gd_scene load_steps=6 format=3 uid="uid://d3jegyuqbedbb"]
 
 [ext_resource type="PackedScene" uid="uid://de0ck5rsgm0eg" path="res://scenes/Game&Levels/tutorial.tscn" id="1_rgjd2"]
 [ext_resource type="PackedScene" uid="uid://bc7bcxv2m70x8" path="res://scenes/Game&Levels/level_1.tscn" id="2_h1rta"]
@@ -6,36 +6,37 @@
 [ext_resource type="PackedScene" uid="uid://bbhyu661iy4da" path="res://scenes/Game&Levels/level_2.tscn" id="4_rgjd2"]
 [ext_resource type="PackedScene" uid="uid://b6nom5po8a6nw" path="res://scenes/Game&Levels/level_3.tscn" id="5_655v7"]
 
-[node name="Levels" type="Node" unique_id=1514311752]
+[node name="Levels" type="Node"]
 
-[node name="Space Stations" type="Node" parent="." unique_id=1588101493]
+[node name="Space Stations" type="Node" parent="."]
 
-[node name="SpaceStation" parent="Space Stations" unique_id=21612453 instance=ExtResource("3_kr3ht")]
-position = Vector2(161, -1415)
+[node name="SpaceStation" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(295, -1372)
 
-[node name="SpaceStation2" parent="Space Stations" unique_id=357409338 instance=ExtResource("3_kr3ht")]
-position = Vector2(199, -2365)
+[node name="SpaceStation2" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(295, -2140)
 
-[node name="SpaceStation3" parent="Space Stations" unique_id=1438452003 instance=ExtResource("3_kr3ht")]
-position = Vector2(2172, -1324)
+[node name="SpaceStation3" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(1831, -1372)
 
-[node name="SpaceStation4" parent="Space Stations" unique_id=1067691527 instance=ExtResource("3_kr3ht")]
-position = Vector2(2114, -2462)
+[node name="SpaceStation4" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(1831, -2140)
 
-[node name="SpaceStation5" parent="Space Stations" unique_id=783652094 instance=ExtResource("3_kr3ht")]
-position = Vector2(174, -3284)
+[node name="SpaceStation5" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+position = Vector2(295, -2908)
 
-[node name="SpaceStation6" parent="Space Stations" unique_id=2016473183 instance=ExtResource("3_kr3ht")]
-position = Vector2(2059, -3275)
+[node name="SpaceStation6" parent="Space Stations" instance=ExtResource("3_kr3ht")]
+visible = false
+position = Vector2(1831, -2908)
 
-[node name="Tutorial" parent="." unique_id=1202062079 instance=ExtResource("1_rgjd2")]
-position = Vector2(105, 178)
+[node name="Tutorial" parent="." instance=ExtResource("1_rgjd2")]
+position = Vector2(71, 68)
 
-[node name="Level1" parent="." unique_id=870815433 instance=ExtResource("2_h1rta")]
-position = Vector2(237, 2030)
+[node name="Level1" parent="." instance=ExtResource("2_h1rta")]
+position = Vector2(295, 1764)
 
-[node name="Level2" parent="." unique_id=717972450 instance=ExtResource("4_rgjd2")]
-position = Vector2(2055, 136)
+[node name="Level2" parent="." instance=ExtResource("4_rgjd2")]
+position = Vector2(1767, 36)
 
-[node name="Level3" parent="." unique_id=593238123 instance=ExtResource("5_655v7")]
-position = Vector2(2435, 1993)
+[node name="Level3" parent="." instance=ExtResource("5_655v7")]
+position = Vector2(2247, 1732)
