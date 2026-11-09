@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://h17l0js6d8pc"]
+[gd_scene format=3 uid="uid://h17l0js6d8pc"]
 
 [ext_resource type="Script" uid="uid://ceorp615q6ci3" path="res://scenes/Background/game_manager.gd" id="1_5ubxa"]
 [ext_resource type="PackedScene" uid="uid://d3jegyuqbedbb" path="res://scenes/Game&Levels/levels.tscn" id="2_uda3f"]
@@ -7,61 +7,62 @@
 [ext_resource type="PackedScene" uid="uid://bbqtvdppvkril" path="res://scenes/Player&UI/ui.tscn" id="4_ev4ff"]
 [ext_resource type="PackedScene" uid="uid://b6qxpwu3hdh1s" path="res://scenes/Player&UI/game_ui.tscn" id="6_xkii7"]
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Node2D" unique_id=493462502]
 
-[node name="GameManager" type="Node" parent="."]
+[node name="GameManager" type="Node" parent="." unique_id=1841692792]
 script = ExtResource("1_5ubxa")
 
-[node name="Levels" parent="." instance=ExtResource("2_uda3f")]
+[node name="Levels" parent="." unique_id=1668207318 instance=ExtResource("2_uda3f")]
 
-[node name="LevelSwitcher" parent="Levels" instance=ExtResource("3_5ruug")]
-position = Vector2(208, -1133)
+[node name="LevelSwitcher" parent="Levels" unique_id=684917756 instance=ExtResource("3_5ruug")]
+position = Vector2(161, -1140)
 
-[node name="LevelSwitcher2" parent="Levels" instance=ExtResource("3_5ruug")]
-position = Vector2(208, -1868)
+[node name="LevelSwitcher2" parent="Levels" unique_id=1149092505 instance=ExtResource("3_5ruug")]
+position = Vector2(199, -2089)
 
-[node name="LevelSwitcher3" parent="Levels" instance=ExtResource("3_5ruug")]
-position = Vector2(-144, -2963)
+[node name="LevelSwitcher3" parent="Levels" unique_id=606154800 instance=ExtResource("3_5ruug")]
+position = Vector2(174, -3009)
 
-[node name="LevelSwitcher4" parent="Levels" instance=ExtResource("3_5ruug")]
-position = Vector2(1728, -2604)
+[node name="LevelSwitcher4" parent="Levels" unique_id=1589014586 instance=ExtResource("3_5ruug")]
+position = Vector2(2114, -2187)
 
-[node name="LevelSwitcher5" parent="Levels" instance=ExtResource("3_5ruug")]
-position = Vector2(1728, -1869)
+[node name="DestinationPoint1" type="Marker2D" parent="Levels" unique_id=666663885]
+position = Vector2(113, 163)
 
-[node name="LevelSwitcher6" parent="Levels" instance=ExtResource("3_5ruug")]
-position = Vector2(1728, -1489)
+[node name="DestinationPoint2" type="Marker2D" parent="Levels" unique_id=166488383]
+position = Vector2(-198, -2360)
 
-[node name="DestinationPoint1" type="Marker2D" parent="Levels"]
+[node name="DestinationPoint3" type="Marker2D" parent="Levels" unique_id=1306849640]
+position = Vector2(-39, 1757)
 
-[node name="DestinationPoint2" type="Marker2D" parent="Levels"]
-position = Vector2(-184, -2142)
+[node name="DestinationPoint4" type="Marker2D" parent="Levels" unique_id=2024203731]
+position = Vector2(-228, -3283)
 
-[node name="DestinationPoint3" type="Marker2D" parent="Levels"]
-position = Vector2(130, 1109)
+[node name="DestinationPoint5" type="Marker2D" parent="Levels" unique_id=509528185]
+position = Vector2(1879, -204)
 
-[node name="DestinationPoint4" type="Marker2D" parent="Levels"]
-position = Vector2(-188, -2877)
+[node name="DestinationPoint6" type="Marker2D" parent="Levels" unique_id=2085273722]
+position = Vector2(1711, -2462)
 
-[node name="DestinationPoint5" type="Marker2D" parent="Levels"]
-position = Vector2(1376, -2952)
+[node name="DestinationPoint7" type="Marker2D" parent="Levels" unique_id=741699321]
+position = Vector2(2525, 1432)
 
-[node name="DestinationPoint6" type="Marker2D" parent="Levels"]
-position = Vector2(1392, -85)
+[node name="DestinationPoint8" type="Marker2D" parent="Levels" unique_id=877332708]
+position = Vector2(1767, -1328)
 
-[node name="DestinationPoint7" type="Marker2D" parent="Levels"]
-position = Vector2(1330, -2144)
+[node name="Label" type="Label" parent="Levels" unique_id=1243430453]
+offset_left = 1776.0
+offset_top = -1391.0
+offset_right = 1863.0
+offset_bottom = -1342.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Thank you
+for playing!"
 
-[node name="DestinationPoint8" type="Marker2D" parent="Levels"]
-position = Vector2(2264, 1092)
-
-[node name="DestinationPoint9" type="Marker2D" parent="Levels"]
-position = Vector2(1728, -1137)
-
-[node name="Player" parent="." instance=ExtResource("3_jycte")]
+[node name="Player" parent="." unique_id=2055043225 instance=ExtResource("3_jycte")]
 z_index = 1
-position = Vector2(-184, -1410)
+position = Vector2(-239, -1413)
 
-[node name="UI" parent="." instance=ExtResource("4_ev4ff")]
+[node name="UI" parent="." unique_id=1169135158 instance=ExtResource("4_ev4ff")]
 
-[node name="GameUI" parent="." instance=ExtResource("6_xkii7")]
+[node name="GameUI" parent="." unique_id=1606889076 instance=ExtResource("6_xkii7")]

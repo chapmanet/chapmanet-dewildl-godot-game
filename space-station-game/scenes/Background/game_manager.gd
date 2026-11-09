@@ -23,15 +23,16 @@ func change_level():
 		$"../GameUI".hide()
 	if level == 5:
 		$"../Player".set_position($"../Levels/DestinationPoint5".global_position)
+		$"../GameUI".show()
 	if level == 6:
 		$"../Player".set_position($"../Levels/DestinationPoint6".global_position)
-		$"../GameUI".show()
+		$"../GameUI".hide()	
 	if level == 7:
 		$"../Player".set_position($"../Levels/DestinationPoint7".global_position)
-		$"../GameUI".hide()
+		$"../GameUI".show()
 	if level == 8:
 		$"../Player".set_position($"../Levels/DestinationPoint8".global_position)
-		$"../GameUI".show()
+		$"../GameUI".hide()
 	if level == 9:
 		$"../Player".set_position($"../Levels/DestinationPoint9".global_position)
 	if level == 10:
