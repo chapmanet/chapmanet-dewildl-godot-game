@@ -31,7 +31,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="RestartButton" type="Button" parent="PauseMenu/VBoxContainer"]
-visible = false
 layout_mode = 2
 size_flags_vertical = 3
 text = "Restart"
