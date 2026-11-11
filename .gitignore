@@ -77,22 +77,7 @@ desktop.ini
 __pycache__/
 *.pyc
 
-# -----------------------------
-# EXPORTS AND BUILDS
-# -----------------------------
 
-# When you export a game (to .exe, .app, .pck, etc.),
-# you’re creating a playable version. These are large
-# files and can always be rebuilt — no need to upload!
-export/
-build/
-bin/
-*.exe
-*.app
-*.dmg
-*.zip
-*.tar.gz
-*.pck
 
 # -----------------------------
 # OTHER FILES TO KEEP REPOS CLEAN
